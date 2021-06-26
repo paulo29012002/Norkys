@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color: black;
+  }
+  
+  /* Header/logo Title */
+  .header {
+      background-color:black;
+      background-image: url(/images/portada.jpg);
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      height:500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    background-color: black;
+  }
+  
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  
+  .centro{
+      height:600px;
+  }
+  .centrouno{
+      height:550px;
+      float: left;
+      width:25%;
+  }
+  .centrodos{
+      height:550px;
+      float: left;
+      width:25%
+  }
+  .centrotres{
+    height:550px;
+    float: left;
+    width:25%
+}
+  .centrocuatro{
+      height:550px;
+      float: left;
+      width:25%
+  }
+  .img-centrouno{
+      background-image: url(images/f1.png);
+      background-position: center;
+      height:450px;
+  }
+  .img-centrodos{
+      background-image: url(images/f2.png);
+      background-position: center;
+      height:450px;
+  }
+  .img-centrotres{
+    background-image: url(images/f3.png);
+    background-position: center;
+    height:450px;
+}
+.img-centrocuatro{
+    background-image: url(images/f4.png);
+    background-position: center;
+    height:450px;
+}
+.img-centrouno2{
+    background-image: url(images/f5.png);
+    background-position: center;
+    height:450px;
+}
+.img-centrodos2{
+    background-image: url(images/f6.png);
+    background-position: center;
+    height:450px;
+}
+.img-centrotres2{
+  background-image: url(images/f7.png);
+  background-position: center;
+  height:450px;
+}
+.img-centrocuatro2{
+  background-image: url(images/f1.png);
+  background-position: center;
+  height:450px;
+}
+  .img-centros{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .text{
+      color: white;
+      font-size:35px;
+      padding: 55px;
+  }
+  
+  .pieuno{
+      height:100px;
+      width: 60%;
+      float: left;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      color:black;
+  }
+  .piedos{
+      height:100px;
+      width: 10%;
+      float: left;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      color:black;
+  }
+  .pietres{
+      height:100px;
+      width: 10%;
+      float: left;	align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      color:black;
+  }
+  .piecuatro{
+      height:100px;
+      width: 10%;
+      float: left;	align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      color:black;
+  }
+  .piecinco{
+      height:100px;
+      width: 10%;
+      float: left;	align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      color:black;
+  }
+  
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 50%;
+    float: left;
+    padding: 20px;
+  }
+  .fakeimgt{
+      background-color: #aaa;
+      width: 50%;
+      float: left;
+      padding: 20px;
+    }
+  .box-rounded {
+      width: 100%;
+      /*background-color: #0F8ECD;*/
+      background: linear-gradient(#22378B, #1877F2);
+      padding: 20px;
+      border: #001335 solid 2px;
+      border-radius: 16px;
+      box-shadow: 2px 5px 8px #451F19;
+      margin-bottom: 14px;
+  }
+  .texto-sombra {
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 5px 3px 5px #000;
+  }
+  .img-rounded {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 10px;
+      filter: hue-rotate(180deg);
+  }
+  figcaption {
+      font-size: 13px;
+      font-style:italic;
+  }
+  /* Footer */
+  .footer {
+    text-align: center;
+    background: white;
+  }
+  
+  @keyframes animacion-h6 {
+      0% {
+          font-size:20px;
+      }
+      50% {
+          color:#820002;
+          transform: rotateX(360deg);
+      }
+      100% {
+          font-size: 10px;
+      }
+  } /*NO BORRAR LLAVE DE CIERRE DE LOS FOTOGRAMAS */
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+      form {
+          padding: 5%;
+      }
+      .input-texto {
+          width: 100%;
+          max-width: 100%;
+      }
+  }

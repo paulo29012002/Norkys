@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+
+/* Header/logo Title */
+.header {
+	padding-top: 120px;;
+	height: 500px;
+	background-image: url('images/img1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  text-align: center;
+  color: white;
+}
+.headerr {
+	padding-top: 120px;;
+	height: 500px;
+	background-image: url('images/inka.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  text-align: center;
+  color: white;
+}
+.centro{
+	text-align: center;
+}
+.letra{
+	font-family: 'Kaushan Script', cursive;
+}
+.rojo{
+	color: red;;
+}
+.blanco{
+	color:white;
+}
+.ml{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.negro{
+	background-color:black;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+	font-size: 20px;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Column container */
+.row {  
+ flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  
+  flex: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content:center;
+  text-align: center;
+
+
+}
+
+.pagina1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.dos{
+	padding:10px;
+}
+.pie{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 50px;
+	flex-direction: row;
+}
+
+
+/* Fake image, just for this example */
+.fakeimg {
+ 
+  width: 100%;
+  
+}
+.box-rounded {
+	width: 100%;
+	/*background-color: #0F8ECD;*/
+	background: linear-gradient(#22378B, #1877F2);
+	padding: 20px;
+	border: #001335 solid 2px;
+	border-radius: 16px;
+	box-shadow: 2px 5px 8px #451F19;
+	margin-bottom: 14px;
+}
+.texto-sombra {
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 5px 3px 5px #000;
+}
+.img-rounded {
+	width: 100%;
+	border-radius: 16px;
+	margin-bottom: 10px;
+	filter: hue-rotate(180deg);
+}
+figcaption {
+	font-size: 13px;
+	font-style:italic;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+
+/* Tablas*/
+table, tr, td, th {
+	border: #676767 solid 1px;
+	border-collapse: collapse;
+	padding: 7px;
+	text-align: center;
+	font-size: 90%;
+}
+table {
+	width: 100%;
+}
+th {
+	background-color: #29E000;
+}
+caption {
+	padding: 7px;
+	font-weight: bold;
+}
+.tr-gris {
+	background-color: #E7E7E7;
+}
+
+/* Formulario*/
+form {
+	width: 100%;
+	background-color: #11F98D;
+	padding: 1% 2%;
+	display: flex;
+	flex-direction: column;
+}
+.form-div {
+	width: 100%;
+}
+label {
+	margin: 10px 0;
+	width: 80%;
+	font-weight: bold;
+}
+input {
+	border: #051F00 solid 1px;
+}
+.input-texto {
+	padding: 5px;
+	width: 100%;
+	max-width: 70%;
+	font-size: 0.85em;
+}
+.input-corto {
+	padding: 3px;
+	width: 80px;
+	max-width: 80%;
+	font-size: 0.85em;
+}
+.input-fecha {
+	padding: 3px;
+	width: 104px;
+	max-width: 80%;
+	font-size: 0.85em;
+}
+textarea {
+	border: #051F00 solid 1px;
+	padding: 5px;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 0 5px 0;
+	resize: vertical;
+	height: 300px;
+	min-height: 300px;
+	font-family: Arial;
+	font-size: 0.85em;
+}
+button {
+	border: #001E1D solid 2px;
+	background-color: #001B1F;
+	color: #fff;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 5px 0;
+	width: 120px;
+	padding: 1%;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #450001;
+}
+
+/*  ANIMACIONES */
+.caja-cambio {
+	width: 150px;
+	height: 150px;
+	padding: 54px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	background: #650001;
+	cursor: pointer;
+	transition: all 2s ease-in-out 0.5s;
+}
+.caja-cambio:hover {
+	background: #003004;
+	transform: scale(1.5) translateX(40px);
+	filter: blur(2px);
+}
+h6 {
+	animation-duration: 2s;
+	animation-name: animacion-h6;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	z-index: 2;
+	position: fixed;
+	bottom: 100px;
+	left: 80px;
+}
+@keyframes animacion-h6 {
+	0% {
+		font-size:20px;
+	}
+	50% {
+		color:#820002;
+		transform: rotateX(360deg);
+	}
+	100% {
+		font-size: 10px;
+	}
+} /*NO BORRAR LLAVE DE CIERRE DE LOS FOTOGRAMAS */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+	form {
+		padding: 5%;
+	}
+	.input-texto {
+		width: 100%;
+		max-width: 100%;
+	}
+}
